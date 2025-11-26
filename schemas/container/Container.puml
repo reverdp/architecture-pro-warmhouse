@@ -60,11 +60,10 @@ Rel(TelemetryService, TelemetryServiceDB, "", "JDBC")
 
 Rel(TelemetryService, EventBus, "Телеметрия с устройств (журнал)")
 Rel(AutomationService, EventBus, "Телеметрия с устройств (триггер)")
-Rel(ApiGateway, EventBus, "Действие пользователя")
-Rel(DeviceManagementService, DeviceCatalogService, "Запрос спецификации устройства", "HTTP")
+Rel(DeviceManagementService, DeviceCatalogService, "Запрос спецификации устройства", "REST")
 Rel(DeviceManagementService, EventBus, "Статус устройства")
 Rel(DeviceAdapterService, EventBus, "Статус устройства, телеметрия")
 Rel(DeviceAdapterService, device, "")
-Rel(AutomationService, DeviceManagementService, "Выполнение действия по сценарию", "HTTP")
+Rel(AutomationService, DeviceManagementService, "Выполнение действия по сценарию", "REST")
 
 @enduml
