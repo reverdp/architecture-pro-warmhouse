@@ -56,37 +56,59 @@
 
 ### 5. Визуализация контекста системы — диаграмма С4
 
-Добавьте сюда диаграмму контекста в модели C4.
-
-Чтобы добавить ссылку в файл Readme.md, нужно использовать синтаксис Markdown. Это делают так:
-
 ```markdown
-[Текст ссылки](URL)
-```
-
-Замените `Текст ссылки` текстом, который хотите использовать для ссылки. Вместо `URL` вставьте адрес, на который должна вести ссылка. Например:
-
-```markdown
-[Посетите Яндекс](https://ya.ru/)
+[Диаграмма контекста](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/context/Context-SmartHome_Context_Diagram.png)
 ```
 
 # Задание 2. Проектирование микросервисной архитектуры
 
 **Диаграмма контейнеров (Containers)**
 
-
+```markdown
+[Диаграмма ](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/container/Container-SmartHouse_Container_Diagram.png)
+```
 
 **Диаграмма компонентов (Components)**
 
+```markdown
+[Диаграмма DeviceManagementService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentDeviceManagement-SmartHouse_Device_Management_Service_Component_Diagram.png)
+```
 
+```markdown
+[Диаграмма DeviceCatalogService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentDeviceCatalog-SmartHouse_Device_Catalog_Service_Component_Diagram.png)
+```
+
+```markdown
+[Диаграмма AutomationService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentAutomation-SmartHouse_Automation_Service_Component_Diagram.png)
+```
+
+```markdown
+[Диаграмма TelemetryService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentTelemetry-SmartHouse_Telemetry_Service_Component_Diagram.png)
+```
+
+```markdown
+[Диаграмма UserService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentUser-SmartHouse_User_Service_Component_Diagram.png)
+```
+
+```markdown
+[Диаграмма WebApplication](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentWeb-SmartHouse_Web_Application_Component_Diagram.png)
+```
+
+```markdown
+[Диаграмма HouseService](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/component/ComponentHouse-SmartHouse_House_Service_Component_Diagram.png)
+```
 
 **Диаграмма кода (Code)**
 
-
+```markdown
+[Диаграмма кода](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/code/Code-SmartHouse_Device_Management_Service_Code_Diagram.png)
+```
 
 # Задание 3. Разработка ER-диаграммы
 
-
+```markdown
+[Диаграмма ER](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/schemas/ER/ER-SmartHouse_Device_Management_Service_ER_Diagram.png)
+```
 
 # Задание 4. Создание и документирование API
 
@@ -97,20 +119,14 @@
 
 ### 2. Документация API
 
-
+```markdown
+[Swagger](https://github.com/reverdp/architecture-pro-warmhouse/blob/warmhouse/swagger/api-gateway.yaml)
+```
 
 # Задание 5. Работа с docker и docker-compose
 
-Выполнено
-
+Настройки выполнены
 
 # **Задание 6. Разработка MVP**
 
-Необходимо создать новые микросервисы и обеспечить их интеграции с существующим монолитом для плавного перехода к микросервисной архитектуре. 
-
-### **Что нужно сделать**
-
-1. Создайте новые микросервисы для управления телеметрией и устройствами (с простейшей логикой), которые будут интегрированы с существующим монолитным приложением. Каждый микросервис на своем ООП языке.
-2. Обеспечьте взаимодействие между микросервисами и монолитом (при желании с помощью брокера сообщений), чтобы постепенно перенести функциональность из монолита в микросервисы. 
-
-В результате у вас должны быть созданы Dockerfiles и docker-compose для запуска микросервисов. 
+Созданы новые микросервисы device-api и telemetry-api и обеспечена их интеграции с существующим монолитом
